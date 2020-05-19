@@ -51,8 +51,8 @@ function deleteCheck(e){
     //Animation
     todo.classList.add("fall");
     removeLocalTodos(todo);
-    todo.addEventListener('transitioned', function(){
-    todo.remove();
+    todo.addEventListener('transitionend', function(){
+        todo.remove();
     });
     }
 
